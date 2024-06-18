@@ -23,6 +23,8 @@
                         "polyfills": "src/polyfills.ts",
                         "tsConfig": "tsconfig.app.json",
                         "aot": false,
+                        "buildOptimizer": false,
+                        "localize": true,
                         "assets": ["src/favicon.png", "src/assets"],
                         "styles": ["src/styles/styles.scss"],
                         "stylePreprocessorOptions": {
@@ -64,18 +66,18 @@
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
-                        "browserTarget": "sb-admin-angular:build"
+                        "buildTarget": "sb-admin-angular:build"
                     },
                     "configurations": {
                         "production": {
-                            "browserTarget": "sb-admin-angular:build:production"
+                            "buildTarget": "sb-admin-angular:build:production"
                         }
                     }
                 },
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "sb-admin-angular:build"
+                        "buildTarget": "sb-admin-angular:build"
                     }
                 },
                 "test": {
@@ -118,6 +120,5 @@
                 }
             }
         }
-    },
-    "defaultProject": "sb-admin-angular"
+    }
 }
