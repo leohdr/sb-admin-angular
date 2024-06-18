@@ -44,7 +44,7 @@
         "tslib": "2.0.3",
         "uuid": "8.3.1",
         "webpack-bundle-analyzer": "4.1.0",
-        "zone.js": "~0.14.2"    
+        "zone.js": "~0.14.2"
     },
     "devDependencies": {
         "@angular-devkit/build-angular": "18.0.3",
@@ -70,6 +70,7 @@
         "karma-coverage-istanbul-reporter": "3.0.3",
         "karma-jasmine": "4.0.1",
         "karma-jasmine-html-reporter": "1.5.4",
+        "lodash": "^4.17.21",
         "prettier": "2.1.2",
         "pug": "3.0.0",
         "pug-lint": "2.6.0",
